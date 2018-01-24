@@ -4,8 +4,9 @@ namespace Shuenn\SQLRelay;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Connection;
-use Shuenn\SQLRelay\Database\SQLRelayConnection;
+use Illuminate\Database\MySqlConnection;
 use Shuenn\SQLRelay\Connectors\SQLRelayConnector;
+
 
 class SQLRelayServiceProvider extends ServiceProvider
 {
@@ -20,7 +21,7 @@ class SQLRelayServiceProvider extends ServiceProvider
         app()->bind('db.connector.sqlrelay', SQLRelayConnector::class);
 
         Connection::resolverFor('sqlrelay', function ($connection, $database, $prefix, $config){
-            return new SQLRelayConnection($connection, $database, $prefix, $config);
+            return new MySqlConnection($connection, $database, $prefix, $config);
         });
     }
 }
