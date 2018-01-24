@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Shuenn\\SQLRelay\\": "packages/shuenn/sqlrelay/src/"
+            "Shuenn\\SQLRelay\\": "src/"
         }
     },
     "minimum-stability": "dev"
