@@ -1,0 +1,17 @@
+{
+    "name": "shuenn/sqlrelay",
+    "description": "SQLrelay Driver",
+    "type": "library",
+    "authors": [
+        {
+            "name": "shuenn",
+            "email": "shuenn@me.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Shuenn\\SQLRelay\\": "packages/shuenn/sqlrelay/src/"
+        }
+    }
+}
