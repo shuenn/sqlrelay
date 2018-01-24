@@ -1,17 +1,22 @@
 {
     "name": "shuenn/sqlrelay",
-    "description": "SQLrelay Driver",
+    "description": "Laravel SQLrelay PDO Driver",
     "type": "library",
+    "keywords": ["laravel","sqlrelay"],
+    "license": "MIT",
     "authors": [
         {
             "name": "shuenn",
             "email": "shuenn@me.com"
         }
     ],
-    "require": {},
+    "require": {
+        "php": ">=7.1.0"
+    },
     "autoload": {
         "psr-4": {
             "Shuenn\\SQLRelay\\": "packages/shuenn/sqlrelay/src/"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
